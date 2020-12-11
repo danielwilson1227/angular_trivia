@@ -1,0 +1,200 @@
+#full-container {
+	background-color: #850707;
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 1em;
+}
+#flex-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.mainTitle {
+	text-align: center;
+	font-size: 3rem;
+	color: white;
+}
+#total-score {
+	margin-bottom: 1em;
+	visibility: visible;
+	font-size: 2rem;
+}
+#instructionsBTN {
+	width: 10em;
+	height: 3em;
+	padding: 0.5em;
+	margin: 1.5em auto;
+	background-color: #0d0096;
+	color: white;
+}
+#instructions-container {
+	display: none;
+	z-index: 10;
+	padding: 1em;
+}
+#instructions-text {
+	font-size: 1.5rem;
+	color: white;
+}
+.close {
+	color: #b6af06;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+#refresh {
+	width: 6em;
+	height: 3em;
+	font-size: 1rem;
+	margin: 1em auto;
+	display: none;
+	cursor: pointer;
+	background-color: #0d0096;
+	color: white;
+}
+#diffCont {
+	background-color: #b6af06;
+	width: 30%;
+	margin: 0 auto;
+	padding: 0.5em;
+}
+#difficultyBTNS {
+	font-size: 2rem;
+	margin: 0 auto;
+}
+.diffBTNS {
+	padding: 1em;
+	margin: 1em;
+	cursor: pointer;
+	background-color: #0d0096;
+	color: white;
+}
+#exit:hover,
+#instructionsBTN:hover,
+.hover-On:hover {
+	border: solid #b6af06;
+}
+#full-container {
+	background-color: #850707;
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 1em;
+}
+#flex-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.mainTitle {
+	text-align: center;
+	font-size: 3rem;
+	color: white;
+}
+#instructionsBTN {
+	width: 10em;
+	height: 3em;
+	padding: 0.5em;
+	margin: 1.5em auto;
+	background-color: #0d0096;
+	color: white;
+}
+#instructions-container {
+	display: none;
+	z-index: 10;
+	padding: 1em;
+}
+#instructions-text {
+	font-size: 1.5rem;
+	color: white;
+}
+.close {
+	color: #b6af06;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+.answerChoice,
+#instructionsBTN:hover,
+.close:hover,
+.close:focus {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+#chooseDiff {
+	display: flex;
+	flex-direction: column;
+}
+#chooseDiffText {
+	text-align: center;
+	font-size: 1.5rem;
+	color: black;
+	position: sticky;
+}
+#diffCont {
+	background-color: #b6af06;
+	width: 30%;
+	margin: 0 auto;
+	padding: 0.5em;
+}
+#difficultyBTNS {
+	font-size: 2rem;
+	margin: 0 auto;
+}
+.diffBTNS {
+	padding: 1em;
+	margin: 1em;
+	cursor: pointer;
+	background-color: #0d0096;
+	color: white;
+}
+#exit:hover,
+#instructionsBTN:hover,
+.hover-On:hover {
+	border: solid #b6af06;
+}
+.no-border {
+	border: none;
+}
+
+@media (min-width: 0px) and (max-width: 670px) {
+	#instructions-text {
+		font-size: 1.2rem;
+	}
+	#total-score {
+		font-size: 1.4rem;
+	}
+}
+@media (min-width: 500px) and (max-width: 559px) {
+	#chooseDiffText {
+		font-size: 1.2rem;
+	}
+}
+@media (min-width: 400px) and (max-width: 499px) {
+	.mainTitle {
+		font-size: 2.5rem;
+	}
+	#chooseDiffText {
+		font-size: 0.8rem;
+	}
+}
+@media (min-width: 0px) and (max-width: 399px) {
+	.mainTitle {
+		font-size: 2rem;
+	}
+	#chooseDiffText {
+		font-size: 0.8rem;
+	}
+	.diffBTNS {
+		margin: 0.5em;
+	}
+	#instructions-text {
+		font-size: 0.8rem;
+	}
+}

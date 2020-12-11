@@ -1,0 +1,36 @@
+<div #questionsContainer id="questions-container" class="trivia-container">  
+  <div class="trivia-content">
+      <div id="trivia-flex">
+      <p id="questNum">{{ questNum }}</p>
+    <p id="total-Score"> Total Score: {{ totalScore }} Points</p>
+  </div>
+      <div id="question"> {{ question }} </div>
+    <div id="choice-container">
+        <div id="flex-one">
+      <button #answerChoice class="answerChoice"> {{ answerChoice0 }}
+      </button>
+      <button #answerChoice class="answerChoice"> {{ answerChoice1 }}
+      </button>
+    </div>
+    <div id="flex-two">
+      <button #answerChoice class="answerChoice"> {{ answerChoice2 }}
+      </button>
+      <button #answerChoice class="answerChoice"> {{ answerChoice3 }}
+      </button>
+    </div>
+    </div>
+      <button #nextBTN id="nextBTN">NEXT  <fa-icon [icon]="faArrowRight"></fa-icon></button>
+      <p id="point-Display">Current Points: {{ pointCount }}</p>
+      <p id="correct-Display">Answered Correctly: {{ correctCount }}</p>
+      <br>
+   </div>
+</div>
+<div #resultsContainer id="results-container" class="trivia-container">  
+  <div class="trivia-content">
+		<h1 id='resultsHeader'>YOUR RESULTS</h1>
+		<p class="resultsText"> {{ resultOne }} </p>
+		<p class="resultsText"> {{ resultTwo }} </p>
+		<p class="resultsText"> {{ jokeText }} </p>
+		<button (click)="clearAll(scoreDisp)" class= 'hover-On' id="exit">EXIT</button>
+    </div>
+</div>
